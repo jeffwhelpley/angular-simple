@@ -26,7 +26,6 @@ class AppComponent {
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule],
-  providers: [],
   bootstrap: [AppComponent]
 })
 class AppModule { }
