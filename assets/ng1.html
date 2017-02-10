@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Angular 1 Example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    </head>
+    <body ng-app="MyApp">
+        <h1>Angular 1 Example</h1>
+        <div ng-controller="MyCntl">
+            I like {{thing}}
+        </div>
+
+        <script>
+            angular.module('MyApp', [])
+                .controller('MyCntl', function ($scope) {
+                    $scope.thing = 'stuff';
+                });
+        </script>
+    </body>
+</html>

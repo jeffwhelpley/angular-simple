@@ -1,0 +1,27 @@
+{
+  "name": "simple",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "build": "tsc && ./node_modules/.bin/webpack __build__/src/client.js assets/bundle.js",
+    "start": "node $NODE_DEBUG_OPTION __build__/src/server || true"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^2.4.0",
+    "@angular/compiler": "^2.4.0",
+    "@angular/core": "^2.4.0",
+    "@angular/platform-browser": "^2.4.0",
+    "@angular/platform-browser-dynamic": "^2.4.0",
+    "core-js": "^2.4.1",
+    "express": "^4.14.1",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "@types/node": "^6.0.42",
+    "webpack": "^2.2.1"
+  }
+}
